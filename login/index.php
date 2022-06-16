@@ -28,7 +28,8 @@
         </tr>
         <?php while($row = mysqli_fetch_array($result)){?>
         <tr>
-            <!--<td><?php //echo($row['idcontato'])?></td>--><td><?php echo($row['nome'])?></td>
+            <!--<td><?php //echo($row['idcontato'])?></td>-->
+            <td><?php echo($row['nome'])?></td>
             <td><?php echo($row['telefone'])?></td>
             <td><?php echo($row['endereco'])?></td>
             <td><?php echo($row['senha'])?></td>

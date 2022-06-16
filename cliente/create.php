@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   if (mysqli_stmt_execute($stmt)) {
     $_SESSION['msg'] = "<center>Cadastro com sucesso";
   } else {
-    $_SESSION['msg'] = "Erro no cadastro";
+    $_SESSION['msg'] = "<center>Erro no cadastro";
   }
 }
 ?>
@@ -100,20 +100,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <div>
               <input type="password" class="input-cadastro" name="confsenha" placeholder="Confirmar Senha" required>
             </div>
-            <br>
           </div>
           <br>
-
           <div class="input-cadastro" id="genero-cadastro"><strong>Gênero</strong>
             <input type="radio" name="sexo" value="M"> Masculino
             <input type="radio" name="sexo" value="F"> Feminino
             <input type="radio" name="sexo" value="O"> Outros
-          </div>
-
-          <p><button type="submit" class="botao-cadastro">Cadastrar</button></p>
-
-          <p id="text-center">Já tem uma conta? <a href="../login/create.php">Login</a></p>
-
+          </div><br>
           <?php
           if (isset($_SESSION['msg']) == true) {
             echo "<div class='input-cadastro'>";
@@ -121,6 +114,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             echo "</div>";
           }
           ?>
+          <p><button type="submit" class="botao-cadastro">Cadastrar</button></p>
+
+          <p id="text-center">Já tem uma conta? <a href="../login/create.php">Login</a></p>  
       </form>
     </div>
   </div>

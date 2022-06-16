@@ -18,7 +18,8 @@
     <p><a href="create.php">Incluir</a></p>
     <table border="1">
         <tr>
-            <!--<td>Id</td>--><td><center>Nome</center></td>
+            <!--<td>Id</td>-->
+            <td><center>Nome</center></td>
             <td><center>Valor</center></td>
             <td><center>Detalhe</center></td>
             <td><center>Validade</center></td>

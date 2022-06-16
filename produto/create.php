@@ -1,3 +1,26 @@
+<?php
+    require_once "../util/config.php";
+    if ($_SERVER['REQUEST_METHOD'] == "POST"){
+        $nome = $_POST["nome"];
+        $valor = $_POST["valor"];
+        $detalhe = $_POST["detalhe"];
+        $validade = $_POST["validade"];
+        $marca = $_POST["marca"];
+
+        $sql = "INSERT INTO produto (nome, valor, detalhe, validade, marca) VALUES(?, ?, ?, ?, ?)";
+        
+        $stmt = mysqli_prepare($link, $sql);
+        
+        mysqli_stmt_bind_param($stmt, "sisis", $nome, $valor, $detalhe, $validade, $marca);
+
+        if(mysqli_stmt_execute($stmt)){
+            echo " Registro concluido";
+        }else{
+            echo " Erro no Registro";
+        }
+    
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,11 +39,11 @@
             <input type="text" size="40" placeholder=" Descriçao do Produto"> &nbsp; &nbsp;
             <input type="date" placeholder=" Validade"><br><br>
             <label for="uf">Produtos:</label>
-            <select name="racoes" id="uf">
+            <select name="racoes">
                     <option value="0">Selecionar</option>
-                    <option value="1">Premium</option>
+                    <option value="1">Rações</option>
                     <option value="2">Briquedos</option>
-                    <option value="3">Roupa</option>
+                    <option value="3">Roupas</option>
             </select><br><br><br>
             <input type="submit" value="Registrar"> &nbsp; &nbsp;
             <input type="submit" value="Atuaizar"> &nbsp; &nbsp;

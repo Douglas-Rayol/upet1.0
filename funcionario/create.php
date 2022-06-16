@@ -30,9 +30,54 @@
 <body>
     <h2>Cadastro de Funcionario</h2>
     <form method="post" action="create.php">
-        <p>Nome:<input type="text" name="nome"></p>
-        <p>Telefone:<input type="text" name="telefone"></p>
-        <p>Endereco:<input type="text" name="endereco"></p>
+    <div class="nomecadastro">
+            <input type="text" class="input-cadastro" name="nome" placeholder="Nome" required>
+          </div>
+          <br>
+          
+          <div class="input-group input-group-sm mb-3">
+            <input type="text" class="input-cadastro" name="telefone" placeholder="Telefone" required>
+          </div>
+          <br>
+
+          <div class="col-md-4 mb-3">
+            <input type="date" class="input-cadastro" name="nascimento" placeholder="Nascimento (DD/MM/AAAA)" required>
+          </div>
+          <br>
+
+          <div class="input-group input-group-sm mb-3">
+            <input type="text" class="input-cadastro" name="email" placeholder="Email" required>
+          </div>
+          <br>
+
+          <div class="form-row">
+            <div class="cidadecadastro">
+              <input type="text" class="input-cadastro" name="cidade" placeholder="Cidade" required>
+            </div>
+            <br>
+
+            <div class="col-md-3 mb-3">
+              <input type="text" class="input-cadastro" name="estado" placeholder="Estado" required>
+            </div>
+            <br>
+
+            <div class="col-md-3 mb-3">
+              <input type="text" class="input-cadastro" name="cep" placeholder="CEP" required>
+            </div>
+            <br>
+            <div>
+              <input type="text" class="input-cadastro" name="endereco" placeholder="Endereço" required>
+            </div>
+            <br>
+            <div class="col-md-3 mb-3">
+              <input type="password" class="input-cadastro" name="senha" placeholder="Senha" required>
+            </div>
+            <br>
+            <div>
+              <input type="password" class="input-cadastro" name="confsenha" placeholder="Confirmar Senha" required>
+            </div>
+          </div>
+          <br>
         <p><input type="submit" value="Salvar"></p>
     </form>
     <p><a href='index.php'>Voltar</a></p>

@@ -21,6 +21,8 @@
             <!--<td>Id</td>-->
             <td><center>Nome</center></td>
             <td><center>Telefone</center></td>
+            <td><center>Nascimento</center></td>
+            <td><center>E-mail</center></td>
             <td><center>Endereço</center></td>
             <td colspan="3"><center>Ações</center></td>
         </tr>
