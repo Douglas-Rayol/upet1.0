@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           ?>
           <p><button type="submit" class="botao-cadastro">Cadastrar</button></p>
 
-          <p id="text-center">Já tem uma conta? <a href="../login/create.php">Login</a></p>  
+          <p id="text-center">Já tem uma conta? <a href="../login/login.php">Login</a></p>  
       </form>
     </div>
   </div>
