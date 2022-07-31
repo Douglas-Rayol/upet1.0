@@ -1,0 +1,54 @@
+table{
+    font:  16px arial, verdana, helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+    margin-left: 100px;
+    color: #000000;
+}
+
+.tr{
+    font:  16px arial, verdana, helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+    margin-left: 100px;
+    color: #000000;
+}
+
+.td{
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 60%;
+    background-color: #fed8b1;;
+    border-radius: 10px;
+}
+
+h2{
+    background-color: #ff8c00;
+    border: none;
+    padding: 8px;
+    width: 62%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font:  16px arial, verdana, helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+    margin-left: 100px;
+}
+p a{
+    background-color: #ff8c00;
+    border: none;
+    padding: 8px;
+    width: 62%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font:  16px arial, verdana, helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+    margin-left: 100px;
+}

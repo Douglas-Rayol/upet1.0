@@ -29,6 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Produto</title>
     <link rel="stylesheet" href="../css/cadas-pro.css">
+    <link rel="shortcut icon" href="../css/upet.ico">
 </head>
 <body>
     <div class="form">

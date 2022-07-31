@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitrine da Loja</title>
+<meta charset="UTF-8">
+    <title>uPet</title>
+    <link rel="shortcut icon" href="../css/upet.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/vitri.css">
+    
 </head>
 <body>
-    <h2> Vitrine</h2>
-    <div id="produtos">
-        
-    </div><br><br>
-    
-    <h2>Carrinho</h2>
-    <div id="carrinho">
-        
+    <!-- Nav -->
+    <div id="container-nav">
+        <div id="nav-left">
+            <a href="#" class="link-left"><img src="../css/upet_logo.png" style="width:6%;"/></a>
+            <a href="#" class="link-left">Alimentos</a>
+            <a href="#" class="link-left">Roupas</a>
+            <a href="#" class="link-left">Brinquedos</a>
+            <a href="#" class="link-left">Acessórios</a>
+            <a href="#" class="link-left">Farmácia e Higiene</a>
+            <a href="#" class="link-left">Sobre</a>
+        </div>
+        <div id="nav-right">
+            <a href="#" class="link-right">Entrar</a>
+            <a href="#" class="link-right">Cadastrar</a>
+            <a href="#" class="link-right"><img src="../css/upet-carrinho.png" style="width:10%;"/></a>
+        </div>
     </div>
+    <!-- Fim Nav -->
 
-    <script>
-        const items = [
-            {
-                id: 0,
-                nome:'Ração',
-                img: '../css/rc.jpg',
-                quantidade: 0
-            },
-            {
-                id: 1,
-                nome: 'Brinquedo',
-                img: '../css/b.jpg',
-                quantidade: 0
-            },
-            {
-                id: 2,
-                nome:'Roupa',
-                img:'../css/ro.jpg',
-                quantidade: 0
-            },
-        ]
+    <!-- Carrossel de Slides -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio Buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
 
-        inicializarLoja = () => {
-            var containerProdutos = document.getElementById('produtos');
-            items.map((val)=>{
-                console.log(val.nome);
-                containerProdutos.innerHTML+=`
-                <div class="produto">
-                  <img src="`+val.img+`" />
-                  <p>`+val.nome+`</p>
-                  <a key="`+val.id+`" href="#">Adicionar ao carrinho!<a/>
-                </div>
-                `;
-            })
-            
-        }
+            <!-- Slide images -->
+            <div class="slide first">
+                <img src="../css/(1)1000x300.jpg" alt="Imagem 1" />
+            </div>
+            <div class="slide">
+                <img src="../css/(2)1000x300.jpg" alt="Imagem 2" />
+            </div>
+            <div class="slide">
+                <img src="../css/(3)1000x300.jpg" alt="Imagem 3" />
+            </div>
+            <div class="slide">
+                <img src="../css/(4)1000x300.jpg" alt="Imagem 4" />
+            </div>
 
-        inicializarLoja();  
-        
-        atualizarCarrinho = () => {
-            var containerCarrinho = document.getElementById('carrinho');
-            containerCarrinho.innerHTML = "";
-            items.map((val)=>{
-                if(val.quantidade > 0){
-                containerCarrinho.innerHTML+=`
-                <div class="card">
-                    <p style="float:left;">Protudo: `+val.nome+`</p>
-                    <p style="float:right;">Quantidade: `+val.quantidade+`</p>
-                    <div style="clear:both"></div>
-                </div>
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
 
-                `;
-                }
-            })
-        }
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>     
+        </div>
+    </div>
+    <!-- Fim do Carrossel de Slides -->
 
-        var links = document.getElementsByTagName('a');
-
-        for(var i = 0; i < links.length; i++){
-            links[i].addEventListener("click", function(){
-                let key = this.getAttribute('key');
-                items[key].quantidade++;
-                atualizarCarrinho();
-                return false;
-            })
-        }
-    </script>
+    <div class="container-produtos">
+        <div class="container-texto">
+            <div>Alimentos<a id="mais" href="#">Ver mais</a></div>
+        </div>
+        <div id="alimento">
+        </div>
+    </div>
+    <div class="container-produtos">
+        <div class="container-texto">
+            <div>Roupas<a id="mais" href="#">Ver mais</a></div>
+        </div>
+        <div id="roupa">
+        </div>
+    </div>
+    <script src="const.js"></script>
 </body>
 </html>

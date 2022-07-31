@@ -12,6 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exibir Usuario</title>
+    <link rel="stylesheet" href="../css/clien-func.css">
+    <link rel="shortcut icon" href="../css/upet.ico">
 </head>
 <body>
     <h2>Lista de Usuario</h2>
@@ -22,7 +24,6 @@
             <td><center>Nome</center></td>
             <td><center>CPF</center></td>
             <td><center>Telefone</center></td>
-            <td><center>Nascimento</center></td>
             <td><center>E-mail</center></td>
             <td><center>Endereço</center></td>
             <td colspan="3"><center>Ações</center></td>

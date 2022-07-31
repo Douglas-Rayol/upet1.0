@@ -68,7 +68,7 @@ img{
 
 #text-center{
     margin-left: 20%;
-    font: 16px
+    font: 16px;
 }
 
 body{
@@ -116,5 +116,31 @@ img{
     margin-left: 30%;
     text-align: left;
 }
+a{
+    background-color: #ff8c00;
+    border: none;
+    padding: 8px;
+    width: 62%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font:  16px arial, verdana, helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+    
 
-
+}
+p.a{
+    background-color: cyan;
+    border: none;
+    padding: 8px;
+    width: 62%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font:  16px arial, verdana, helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+}

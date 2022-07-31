@@ -12,9 +12,9 @@
     mysqli_stmt_bind_param($stmt, "sss", $nome, $telefone, $endereco);
 
     if(mysqli_stmt_execute($stmt)){
-        echo " pronto pra outro";
+        echo " Registrado com Sucesso";
     }else{
-        echo " ta tudo errado";
+        echo " Falha no Registro";
     }
 
 ?>

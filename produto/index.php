@@ -1,7 +1,7 @@
 <?php
     require_once "../util/config.php";
 
-    $sql = "SELECT * FROM produto ORDER BY nome";
+    $sql = "SELECT * FROM produto";
     $result = mysqli_query($link, $sql);
 
 ?>
@@ -12,6 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exibir Produto</title>
+    <link rel="stylesheet" href="../css/clien-func.css">
+    <link rel="shortcut icon" href="../css/upet.ico">
 </head>
 <body>
     <h2>Lista de Produto</h2>

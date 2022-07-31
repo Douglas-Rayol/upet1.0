@@ -12,4 +12,4 @@
         }
         echo "<a href='index.php'>Voltar</a>";
     }
-?>s
+?>

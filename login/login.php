@@ -29,6 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../css/upet.ico">
 </head>
 <body>
     <form method="POST">
@@ -48,7 +49,7 @@
           }
           ?>
         <br>
-        <p class="texto-login">Não tem uma conta? <a href="../cliente/create.php">Cadastre-se</a></p>
+        <p class="texto-login">Não tem uma conta? <br><br><a href="../cliente/create.php">Cadastre-se</a></p>
     </div>
     <img src="../css/Dog.png" id="cachorro">
     </form>

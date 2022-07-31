@@ -12,9 +12,9 @@
         mysqli_stmt_bind_param($stmt, "sss", $nome, $telefone, $endereco);
 
         if(mysqli_stmt_execute($stmt)){
-            echo " Pronto";
+            echo " Cadastro com sucesso";
         }else{
-            echo " Erro";
+            echo " Erro no cadastro";
         }
     
     }

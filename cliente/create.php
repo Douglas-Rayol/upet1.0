@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
   mysqli_stmt_bind_param($stmt, "ssssssssss", $nome, $telefone, $endereco, $senha, $email, $cpf, $cidade, $estado, $cep, $nascimento);
 
-  if (mysqli_stmt_execute($stmt)) {
+  if (mysqli_stmt_execute($stmt)){
     $_SESSION['msg'] = "<center>Cadastro com sucesso";
   } else {
     $_SESSION['msg'] = "<center>Erro no cadastro";
@@ -36,6 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Upet</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../css/upet.ico">
+  
 </head>
 
 <body>
