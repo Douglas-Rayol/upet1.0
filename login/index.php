@@ -15,7 +15,7 @@
 </head>
 <body>
     <h2>Lista de Usuario</h2>
-    <p><a href="create.php">Incluir</a></p>
+    <p><a href="login.php">Incluir</a></p>
     <table border="1">
         <tr>
             <!--<td>Id</td>-->

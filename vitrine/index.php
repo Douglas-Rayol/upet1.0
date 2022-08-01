@@ -23,8 +23,8 @@
             <a href="#" class="link-left">Sobre</a>
         </div>
         <div id="nav-right">
-            <a href="#" class="link-right">Entrar</a>
-            <a href="#" class="link-right">Cadastrar</a>
+            <a href="../login/login.php" class="link-right">Entrar</a>
+            <a href="../cliente/create.php" class="link-right">Cadastrar</a>
             <a href="#" class="link-right"><img src="../css/upet-carrinho.png" style="width:10%;"/></a>
         </div>
     </div>
