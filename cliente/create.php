@@ -14,7 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   $cep = $_POST["cep"];
   $nascimento = $_POST["nascimento"];
 
-  $sql = "INSERT INTO usuario (nome, telefone, endereco, senha, email, cpf, cidade, estado, cep, nascimento) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+  $sql = "INSERT INTO usuario (nome, telefone, endereco, senha, email, cpf, cidade, estado, cep, nacimento) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+  //$teste = "INSERT INTO usuario (nome, telefone, endereco, senha, email, cpf, cidade, estado, cep, nacimento) VALUES($nome  . $telefone . $endereco . $senha . $email . $cpf . $cidade . $estado . $cep . $nascimento)";
+  //var_dump($teste);
 
   $stmt = mysqli_prepare($link, $sql);
 
@@ -113,6 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
           if (isset($_SESSION['msg']) == true) {
             echo "<div class='input-cadastro'>";
             echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
             echo "</div>";
           }
           ?>
