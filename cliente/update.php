@@ -41,8 +41,8 @@
         <p>Nome:<input type="text" name="nome" value="<?php echo $row['nome'] ?>"></p>
         <p>Telefone:<input type="text" name="telefone" value="<?php echo $row['telefone'] ?>"></p>
         <p>Endereco:<input type="text" name="endereco" value="<?php echo $row['endereco'] ?>"></p>
-        <p>Endereco:<input type="password" name="senha" value="<?php echo $row['senha'] ?>"></p>
-        <p>Endereco:<input type="text" name="email" value="<?php echo $row['email'] ?>"></p>
+        <p>Senha:<input type="password" name="senha" value="<?php echo $row['senha'] ?>"></p>
+        <p>E-mail:<input type="text" name="email" value="<?php echo $row['email'] ?>"></p>
         <input type="hidden" name="id" value="<?php echo $row['idusuario'] ?>">
         <p><input type="submit" value="Alterar"></p>
     </form>

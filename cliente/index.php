@@ -13,14 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exibir Usuario</title>
     <link rel="stylesheet" href="../css/clien-func.css">
-    <link rel="shortcut icon" href="../css/upet.ico">
+    <link rel="shortcut icon" href="../css/img/upet.ico">
 </head>
 <body>
     <h2>Lista de Usuario</h2>
     <p><a href="create.php">Incluir</a></p>
     <table border="1">
         <tr>
-            <!--<td>Id</td>-->
+
             <td><center>Nome</center></td>
             <td><center>CPF</center></td>
             <td><center>Telefone</center></td>
@@ -30,7 +30,7 @@
         </tr>
         <?php while($row = mysqli_fetch_array($result)){?>
         <tr>
-            <td><?php echo($row['idusuario'])?></td>
+            
             <td><?php echo($row['nome'])?></td>
             <td><?php echo($row['cpf'])?></td>
             <td><?php echo($row['telefone'])?></td>

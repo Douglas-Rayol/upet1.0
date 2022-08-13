@@ -12,16 +12,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   $cidade = $_POST["cidade"];
   $estado = $_POST["estado"];
   $cep = $_POST["cep"];
-  $nascimento = $_POST["nascimento"];
+  $nacimento = $_POST["nascimento"];
 
   $sql = "INSERT INTO usuario (nome, telefone, endereco, senha, email, cpf, cidade, estado, cep, nacimento) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-  //$teste = "INSERT INTO usuario (nome, telefone, endereco, senha, email, cpf, cidade, estado, cep, nacimento) VALUES($nome  . $telefone . $endereco . $senha . $email . $cpf . $cidade . $estado . $cep . $nascimento)";
-  //var_dump($teste);
-
   $stmt = mysqli_prepare($link, $sql);
 
-  mysqli_stmt_bind_param($stmt, "ssssssssss", $nome, $telefone, $endereco, $senha, $email, $cpf, $cidade, $estado, $cep, $nascimento);
+  mysqli_stmt_bind_param($stmt, "ssssssssss", $nome, $telefone, $endereco, $senha, $email, $cpf, $cidade, $estado, $cep, $nacimento);
 
   if (mysqli_stmt_execute($stmt)){
     $_SESSION['msg'] = "<center>Cadastro com sucesso";
@@ -32,21 +29,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Upet</title>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="../css/upet.ico">
+  <link rel="shortcut icon" href="../css/img/upet.ico">
   
 </head>
 
 <body>
   <div id="lista">
     <div class="div1">
-      <img src="../css/Cat.png" id="gato">
+      <img src="../css/img/Cat.png" id="gato">
     </div>
 
     <div class="div2">

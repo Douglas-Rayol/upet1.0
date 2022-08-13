@@ -3,9 +3,9 @@
     $DB_USER = 'root';
     $DB_PASSWORD = '';
     $DB_NAME = 'pi_upet';
-    $Port = 3306;
+    $port = 3306;
 
-    $link = mysqli_connect($DB_SERVER, $DB_USER, $DB_PASSWORD, $DB_NAME, $Port);
+    $link = new PDO("mysql:host=$DB_SERVER;port=$port;dbname=" . $DB_NAME, $DB_USER, $DB_PASSWORD);
 
     if ($link === false){
         die("ERRO: não foi possivel realizar a conexao com o BD");
