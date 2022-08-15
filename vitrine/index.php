@@ -44,16 +44,16 @@
 
             <!-- Slide images -->
             <div class="slide first">
-                <img src="../css/img/(1)1000x300.jpg" alt="Imagem 1" />
+                <img src="../css/img/Image1.jpeg" alt="Imagem 1" />
             </div>
             <div class="slide">
-                <img src="../css/img/(2)1000x300.jpg" alt="Imagem 2" />
+                <img src="../css/img/Image2.jpeg" alt="Imagem 2" />
             </div>
             <div class="slide">
-                <img src="../css/img/(3)1000x300.jpg" alt="Imagem 3" />
+                <img src="../css/img/Image3.jpeg" alt="Imagem 3" />
             </div>
             <div class="slide">
-                <img src="../css/img/(4)1000x300.jpg" alt="Imagem 4" />
+                <img src="../css/img/Image4.jpeg" alt="Imagem 4" />
             </div>
 
             <!--Navigation auto-->
