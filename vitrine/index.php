@@ -1,5 +1,5 @@
 <?php
-    include_once "../util/config2.php";
+    include_once "../util/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -78,20 +78,6 @@
         <div class="container-texto">
             <div>Alimentos<a id="mais" href="#">Ver mais</a></div>
         </div>
-        <?php
-        $produto = "SELECT nome, preco, img FROM produtos ORDER BY nome ASC";
-        $result_produto = $link->prepare($produto);
-        $result_produto->execute();
-        
-
-        while($row_produto = $result_produto->fetch(PDO::FETCH_ASSOC)){
-            extract($row_produto);
-            echo "<img src='../css/img/$img'><br>";
-            echo "Nome: $nome <br>";
-            echo "Preço: R$" . number_format($preco, 2, ",", "."). "<br>";
-
-        }
-    ?>
         <div id="alimento">
         </div>
     </div>
@@ -102,6 +88,6 @@
         <div id="roupa">
         </div>
     </div>
-<!--<script src="const.js"></script>-->
+<script src="const.js"></script>
 </body>
 </html>

@@ -25,6 +25,7 @@
     <p>Nome: <?php echo($row['nome']) ?></p>
     <p>Telefone: <?php echo($row['telefone']) ?></p>
     <p>Endereço: <?php echo($row['endereco']) ?></p>
+    
     <p><a href='index.php'>Voltar</a></p>
 </body>
 </html>

@@ -26,12 +26,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Funcionario</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../css/upet.ico">
+    <link rel="shortcut icon" href="../css/img/upet.ico">
 </head>
 <body>
   <div id="lista">
     <div class="div1">
-      <img src="../css/Cat.png" id="gato">
+      <img src="../css/img/Cat.png" id="gato">
     </div>
 
     <div class="div2">

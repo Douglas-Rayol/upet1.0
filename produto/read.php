@@ -3,7 +3,7 @@
 
     if($_GET['id']){
         $id = $_GET['id'];
-        $sql = "SELECT * FROM produto WHERE idproduto = ?";
+        $sql = "SELECT * FROM produtos WHERE idproduto = ?";
         $stmt = mysqli_prepare($link, $sql);
         mysqli_stmt_bind_param($stmt, "i", $id);
         mysqli_stmt_execute($stmt);

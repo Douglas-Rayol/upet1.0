@@ -4,14 +4,14 @@
         $nome = $_POST["nome"];
         $valor = $_POST["valor"];
         $detalhe = $_POST["detalhe"];
-        $validade = $_POST["validade"];
-        $marca = $_POST["marca"];
+        $criar = $_POST["criar"];
+        $modifica = $_POST["modifica"];
 
-        $sql = "INSERT INTO produto (nome, valor, detalhe, validade, marca) VALUES(?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO produto (nome, valor, detalhe, criar, modifica) VALUES(?, ?, ?, ?, ?)";
         
         $stmt = mysqli_prepare($link, $sql);
         
-        mysqli_stmt_bind_param($stmt, "sisis", $nome, $valor, $detalhe, $validade, $marca);
+        mysqli_stmt_bind_param($stmt, "sisis", $nome, $valor, $detalhe, $criar, $modifica);
 
         if(mysqli_stmt_execute($stmt)){
             echo " Registro concluido";

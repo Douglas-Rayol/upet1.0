@@ -7,7 +7,7 @@
     $validade = "123456";
     $marca = "marcos.tavora@gmail.com";
 
-    $sql = "INSERT INTO produto (nome, valor, detalhe, validade, marca) VALUES(?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO produtos (nome, valor, detalhe, validade, marca) VALUES(?, ?, ?, ?, ?)";
     
     $stmt = mysqli_prepare($link, $sql);
     

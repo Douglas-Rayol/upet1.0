@@ -22,7 +22,6 @@
         <tr>
 
             <td><center>Nome</center></td>
-            <td><center>CPF</center></td>
             <td><center>Telefone</center></td>
             <td><center>E-mail</center></td>
             <td><center>Endereço</center></td>
@@ -32,7 +31,6 @@
         <tr>
             
             <td><?php echo($row['nome'])?></td>
-            <td><?php echo($row['cpf'])?></td>
             <td><?php echo($row['telefone'])?></td>
             <td><?php echo($row['email'])?></td>
             <td><?php echo($row['endereco'])?></td>

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exibir Funcionarios</title>
     <link rel="stylesheet" href="../css/clien-func.css">
-    <link rel="shortcut icon" href="../css/upet.ico">
+    <link rel="shortcut icon" href="../css/img/upet.ico">
 </head>
 <body>
     <h2>Lista de Funcionarios</h2>

@@ -15,6 +15,11 @@
             $endereco = $_POST["endereco"];
             $senha = $_POST["senha"];
             $email = $_POST["email"];
+            $cpf = $_POST["cpf"];
+            $cidade = $_POST["cidade"];
+            $estado = $_POST["estado"];
+            $cep = $_POST["cep"];
+            $nacimento = $_POST["nascimento"];
             $id = $_POST["id"];
             $sql = "UPDATE usuario SET nome = ?, telefone = ?, endereco = ?  senha = ? email = ? WHERE idusuario = ?";
             $stmt = mysqli_prepare($link, $sql);
@@ -43,6 +48,7 @@
         <p>Endereco:<input type="text" name="endereco" value="<?php echo $row['endereco'] ?>"></p>
         <p>Senha:<input type="password" name="senha" value="<?php echo $row['senha'] ?>"></p>
         <p>E-mail:<input type="text" name="email" value="<?php echo $row['email'] ?>"></p>
+
         <input type="hidden" name="id" value="<?php echo $row['idusuario'] ?>">
         <p><input type="submit" value="Alterar"></p>
     </form>

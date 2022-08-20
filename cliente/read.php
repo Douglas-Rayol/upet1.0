@@ -27,6 +27,11 @@
     <p>Endereço: <?php echo($row['endereco']) ?></p>
     <p>Senha: <?php echo($row['senha']) ?></p>
     <p>Email: <?php echo($row['email']) ?></p>
+    <p>CPF: <?php echo($row['cpf']) ?></p>
+    <p>Cidade: <?php echo($row['cidade']) ?></p>
+    <p>Estado: <?php echo($row['estado']) ?></p>
+    <p>CEP: <?php echo($row['cep']) ?></p>
+    <p>Nacimento: <?php echo($row['nacimento']) ?></p>
     <p><a href='index.php'>Voltar</a></p>
 </body>
 </html>

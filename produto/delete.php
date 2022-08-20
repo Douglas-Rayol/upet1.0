@@ -2,7 +2,7 @@
     require_once "../util/config.php";
     if($_GET['id']){
         $id = $_GET['id'];
-        $sql = "DELETE FROM produto WHERE idproduto = ?";
+        $sql = "DELETE FROM produtos WHERE idproduto = ?";
         $stmt = mysqli_prepare($link, $sql);
         mysqli_stmt_bind_param($stmt, "i", $id);
         if(mysqli_stmt_execute($stmt)){
