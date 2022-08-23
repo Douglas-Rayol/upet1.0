@@ -4,28 +4,28 @@ const alimentos = [
                 id: 0,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
                 img: '../css/img/rg.jpg',
-                preco: 'R$ 2,99',
+                preco: 'R$ 240,99',
                 quantidade: 0
             },
             {
                 id: 1,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
                 img: '../css/img/rpp.jpg',
-                preco: 'R$ 2,99',
+                preco: 'R$ 180,99',
                 quantidade: 0
             },
             {
                 id: 2,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
                 img: '../css/img/rs.jpg',
-                preco: 'R$ 2,99',
+                preco: 'R$ 199,99',
                 quantidade: 0
             },
             {
                 id: 3,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
                 img: '../css/img/rp.jpg',
-                preco: 'R$ 2,99',
+                preco: 'R$ 230,99',
                 quantidade: 0
             },
         ]
@@ -34,29 +34,29 @@ const roupas = [
             {
                 id: 0,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
-                img: '../css/img/rm.jpg',
-                preco: 'R$ 2,99',
+                img: '../css/img/rp2.jpg',
+                preco: 'R$ 342,99',
                 quantidade: 0
             },
             {
                 id: 1,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
                 img: '../css/img/rv.jpg',
-                preco: 'R$ 2,99',
+                preco: 'R$ 124,99',
                 quantidade: 0
             },
             {
                 id: 2,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
                 img: '../css/img/ry.jpg',
-                preco: 'R$ 2,99',
+                preco: 'R$ 268,99',
                 quantidade: 0
             },
             {
                 id: 3,
                 nome: 'Ração Seca Origens Premium Especial Frango e Cereais Cães Adultos',
-                img: '../css/img/rc.jpg',
-                preco: 'R$ 2,99',
+                img: '../css/img/rpe.jpg',
+                preco: 'R$ 238,99',
                 quantidade: 0
             },
         ]        
