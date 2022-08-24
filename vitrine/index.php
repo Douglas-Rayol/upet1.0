@@ -1,5 +1,7 @@
 <?php
     include_once "../util/config.php";
+    $sql = "SELECT nome, detalhe, valor FROM produtos ORDER BY nome";
+    $result = mysqli_query($link, $sql);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -79,6 +81,15 @@
             <div>Alimentos<a id="mais" href="#">Ver mais</a></div>
         </div>
         <div id="alimento">
+        </tr>
+        <?php while($row = mysqli_fetch_array($result)){?>
+        <tr>
+        <tr>
+        <td><?php echo($row['nome'])?></td>
+            <td><?php echo($row['detalhe'])?></td>
+            <td><?php echo($row['valor'])?></td>
+        </tr>
+        <?php } ?>
         </div>
     </div>
     <div class="container-produtos">
@@ -86,8 +97,17 @@
             <div>Roupas<a id="mais" href="#">Ver mais</a></div>
         </div>
         <div id="roupa">
+        </tr>
+        <?php while($row = mysqli_fetch_array($result)){?>
+        <tr>
+        <tr>
+        <td><?php echo($row['nome'])?></td>
+            <td><?php echo($row['detalhe'])?></td>
+            <td><?php echo($row['valor'])?></td>
+        </tr>
+        <?php } ?>
         </div>
     </div>
-<script src="const.js"></script>
+<!--<script src="const.js"></script>-->
 </body>
 </html>
